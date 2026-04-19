@@ -36,7 +36,6 @@ def load_pretrained_model():
 
 def main():
     st.title("❤️ Heart Disease Prediction App")
-    st.write("Using the renowned UCI Cleveland Dataset and a pre-trained offline Machine Learning model to predict heart disease risk.")
     
     with st.spinner("Loading pre-trained model and weights..."):
         try:
@@ -99,7 +98,6 @@ def main():
 
     elif menu == "Model Evaluation & Data":
         st.header("📊 Model Evaluation & Accuracy")
-        st.write("We used a previously trained offline Machine Learning model (Gradient Boosting Classifier).")
         
         st.markdown(f"### Validation Accuracy: **{accuracy*100:.2f}%**")
         
